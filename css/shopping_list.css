@@ -1,0 +1,146 @@
+/********media queries******/
+
+@media only screen and (max-width: 480px) {
+	
+	html body main {
+        width: 80%;
+    }
+  
+	form div input[type="text"] {
+        width: 55%;
+    }
+	form div .check-box:checked:after {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	body main {
+        width: 40%;
+    }
+  
+	div input[type="text"] {
+        width: 55%;
+    }
+	
+	div .check-box:checked:after {
+        font-size: 10px;
+    }
+	
+}
+
+/***************************/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+	background-color: #d1c6bf;
+}
+
+main {
+    margin: 4em auto;
+    width: 30%;
+	box-shadow: 0.1em 0.1em 2em black;
+	border-radius: 0.5em;
+	border: 0.5em solid #474c52;
+}
+
+header {
+	background-color: #474c52;
+	color: white;
+	padding: 0.5em;
+}
+
+h1 {
+	font-family: 'Mali', cursive;
+	font-size: 2em;
+	text-align: center;
+	margin-left: 0.5em;
+	display: inline;
+	clear: left;
+}
+
+section {
+	background-color: #c9cbcf;
+	height: 20em;
+	overflow: auto;
+}
+
+#add-button {
+	font-size: 2em;
+	border: none;
+	padding: 0;
+	color: white;
+	background: none;
+	display: inline;
+	float: left;
+}
+
+#add-button:hover {
+	color: #acb3b9;
+	transition: 0.2s;
+}
+
+.input-item {
+	margin-bottom: 0.5em;
+	background-color: #aeb1b7;
+}
+
+input[type="text"] {
+	border: none;
+	background: none;
+	font-family: 'Mali', cursive;
+	font-size: 1em;
+    width: 75%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.check-box {
+	-webkit-appearance: none;
+	margin-left: 1em;
+	height: 2em;
+	width: 2em;
+	border: 0.2em solid #474c52;
+	border-radius: 0.2em;
+	display: inline-block;
+	position: relative;
+}
+
+.check-box:checked:after {
+	content: '\2714';
+	font-size: 1rem;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #474c52;
+	background-color: none;
+}
+
+.delete-button {
+	font-size: 2em;
+	border: none;
+	background: none;
+	color: #93979f;
+	margin: none;
+	display: inline-block;
+}
+
+.delete-button:hover {
+	color: #484b51;
+	transition: 0.2s;
+}
+
+footer {
+	background-color: #474c52;
+	color: white;
+	padding: 1em;
+}

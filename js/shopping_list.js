@@ -57,6 +57,17 @@ document.getElementById("add-button").addEventListener("click",function () {
 				console.log ("New item created!");
 			}
 		})
-	}
+	} 
     
 }); 
+
+
+//Removes all content from list after pressing Clear All button
+document.getElementById("clear-button").addEventListener("click", function () {
+    let listContent = document.getElementsByClassName("input-item");
+	for (var i = 0; i < listContent.length; i++) {
+		listContent[i].remove();
+	}
+    
+    
+})

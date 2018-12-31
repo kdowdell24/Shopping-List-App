@@ -143,8 +143,25 @@ footer {
 	background-color: #474c52;
 	color: white;
 	padding: 1em;
+    text-align: center;
 }
 
 #clear-button {
-    
+    border: 0.2em solid white;
+	border-radius: 0.2em;
+    font-family: 'Mali', cursive;
+    font-size: 1em;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#clear-button:hover {
+    border: 0.2em solid white;
+	border-radius: 0.2em;
+    font-family: 'Mali', cursive;
+    font-size: 1em;
+    background: white;
+    color: #474c52;
+    transition: 0.2s;
 }

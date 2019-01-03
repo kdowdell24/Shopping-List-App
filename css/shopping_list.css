@@ -1,4 +1,16 @@
-/********media queries******/
+/***************color palette************//*
+
+light brown: #d1c6bf
+dark gray: #474c52
+light gray: #c9cbcf
+
+medium gray for input items: #aeb1b7
+
+medium gray for delete buttons: #93979f
+
+*//****************************************/
+
+/****************media queries************/
 
 @media only screen and (max-width: 480px) {
 	
@@ -27,10 +39,11 @@
 	div .check-box:checked:after {
         font-size: 10px;
     }
-	
 }
 
-/***************************/
+/***********************************/
+
+/*************global styles*********/
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -52,6 +65,16 @@ main {
 	border: 0.5em solid #474c52;
 }
 
+section {
+	background-color: #c9cbcf;
+	height: 20em;
+	overflow: auto;
+}
+
+/**************************************/
+
+/**************header styles***********/
+
 header {
 	background-color: #474c52;
 	color: white;
@@ -65,12 +88,6 @@ h1 {
 	margin-left: 0.5em;
 	display: inline;
 	clear: left;
-}
-
-section {
-	background-color: #c9cbcf;
-	height: 20em;
-	overflow: auto;
 }
 
 #add-button {
@@ -87,6 +104,10 @@ section {
 	color: #acb3b9;
 	transition: 0.2s;
 }
+
+/******************************************/
+
+/***********list section styles************/
 
 .input-item {
 	margin-bottom: 0.5em;
@@ -135,9 +156,12 @@ input[type="text"] {
 }
 
 .delete-button:hover {
-	color: #484b51;
+	color: #474c52;
 	transition: 0.2s;
 }
+/*****************************************/
+
+/*****************footer styles***********/
 
 footer {
 	background-color: #474c52;

@@ -48,16 +48,18 @@ btn.addEventListener("click", createNewItem);
 
         });
     }	
-    
-  document.addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-      createNewItem();
-      console.log("New item created!");
+  
+
+//creates new list item after pressing Enter with textbox input active
+document.addEventListener("keypress", function(e) {
+	if (e.key === "Enter") {
+		createNewItem();
+ 		console.log("New item created!");
     }
   });
 
 
-//Removes all content from list after pressing Clear All button
+//removes all content from list after pressing Clear All button
 document.getElementById("clear-button").addEventListener("click", function() {
     let listContent = document.querySelectorAll(".input-item");
     for (var i = 0; i < listContent.length; i++) {

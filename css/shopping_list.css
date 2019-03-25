@@ -12,33 +12,10 @@ medium gray for delete buttons: #93979f
 
 /****************media queries************/
 
-@media only screen and (max-width: 480px) {
-	
-	html body main {
-        width: 80%;
-    }
-  
-	form div input[type="text"] {
-        width: 55%;
-    }
-	form div .check-box:checked:after {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-	
-	body main {
-        width: 40%;
-    }
-  
-	div input[type="text"] {
-        width: 55%;
-    }
-	
-	div .check-box:checked:after {
-        font-size: 10px;
-    }
+@media screen and (min-width: 700px) {
+	body .container {
+		margin: 5em auto;
+	}
 }
 
 /***********************************/
@@ -57,25 +34,27 @@ body {
 	background-color: #d1c6bf;
 }
 
-main {
-    margin: 4em auto;
-    width: 30%;
+.container {
+	margin: 1em auto;
 	box-shadow: 0.1em 0.1em 2em black;
 	border-radius: 0.5em;
 	border: 0.5em solid #474c52;
+	max-width: 350px;
 }
 
-section {
+.list-content {
 	background-color: #c9cbcf;
 	height: 20em;
 	overflow: auto;
+	grid-area: content;
+	grid-row: 2;
 }
 
 /**************************************/
 
 /**************header styles***********/
 
-header {
+.list-header {
 	background-color: #474c52;
 	color: white;
 	padding: 0.5em;
@@ -85,9 +64,7 @@ h1 {
 	font-family: 'Mali', cursive;
 	font-size: 2em;
 	text-align: center;
-	margin-left: 0.5em;
-	display: inline;
-	clear: left;
+	margin: 0;
 }
 
 #add-button {
@@ -112,6 +89,7 @@ h1 {
 .input-item {
 	margin-bottom: 0.5em;
 	background-color: #aeb1b7;
+	display: flex;
 }
 
 input[type="text"] {
@@ -119,16 +97,15 @@ input[type="text"] {
 	background: none;
 	font-family: 'Mali', cursive;
 	font-size: 1em;
-    width: 75%;
+  width: 100%;
 	margin: 0 auto;
 	display: inline-block;
 }
 
 .check-box {
 	-webkit-appearance: none;
-	margin-left: 1em;
-	height: 2em;
-	width: 2em;
+	height: 3em;
+	width: 4em;
 	border: 0.2em solid #474c52;
 	border-radius: 0.2em;
 	display: inline-block;
@@ -137,7 +114,7 @@ input[type="text"] {
 
 .check-box:checked:after {
 	content: '\2714';
-	font-size: 1rem;
+	font-size: 2em;
 	font-weight: bold;
 	position: absolute;
 	top: 0px;
@@ -153,6 +130,7 @@ input[type="text"] {
 	color: #93979f;
 	margin: none;
 	display: inline-block;
+	text-align: right;
 }
 
 .delete-button:hover {

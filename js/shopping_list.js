@@ -6,7 +6,7 @@ btn.addEventListener("click", createNewItem);
 
 function createNewItem() {
     console.log("Create");
-	
+
     //creates div element with a class of "input-item"
     let itemContainer = document.createElement("div");
     itemContainer.classList.add("input-item");
